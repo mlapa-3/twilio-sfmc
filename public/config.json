@@ -19,7 +19,7 @@
                     "accountSid": "",
                     "authToken": "",
                     "from": "",
-                    "to": "{{Contact.Attribute.SMSAPIML.Phone}}",
+                    "to": "{{Contact.Attribute.SMSAPIML2.To}}",
                     "body": ""
                 }               
             ],
