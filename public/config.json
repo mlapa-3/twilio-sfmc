@@ -16,12 +16,11 @@
         "execute": {
             "inArguments": [
                 {
-                  "email": "{{Contact.Default.EmailAddress}}",
-                  "to": "{{Contact.Attribute.TwilioV1.TwilioNumber}}" 
+                  "to": "{{Contact.Attribute.SMSAPIML.Phone}}"
                 }               
             ],
             "outArguments": [],
-            "url": "https://twilio-sfmc.herokuapp.com/journeybuilder/execute",
+            "url": "https://twilio-apitest.herokuapp.com/journeybuilder/execute",
             "verb": "POST",
             "body": "",
             "format": "json",
@@ -30,9 +29,9 @@
         }
     },
     "configurationArguments": {
-      "applicationExtensionKey": "e962d1d4-8b07-4e76-89be-ecd1f1423b6d",
+      "applicationExtensionKey": "5560ccd7-c71b-40fc-a1b6-a081f19e6639",
        "save": {
-           "url": "https://twilio-sfmc.herokuapp.com/save",
+           "url": "https://twilio-apitest.herokuapp.com/save",
             "verb": "POST",
             "body": "",
             "format": "json",
@@ -40,7 +39,7 @@
             "timeout": 2000
        },
        "publish": {
-           "url": "https://twilio-sfmc.herokuapp.com/publish",
+           "url": "https://twilio-apitest.herokuapp.com/publish",
             "verb": "POST",
             "body": "",
             "format": "json",
@@ -48,7 +47,7 @@
             "timeout": 2000
        },
        "validate": {
-           "url": "https://twilio-sfmc.herokuapp.com/validate",
+           "url": "https://twilio-apitest.herokuapp.com/validate",
             "verb": "POST",
             "body": "",
             "format": "json",
@@ -56,7 +55,7 @@
             "timeout": 2000
        },
        "stop": {
-           "url": "https://twilio-sfmc.herokuapp.com/stop",
+           "url": "https://twilio-apitest.herokuapp.com/stop",
             "verb": "POST",
             "body": "",
             "format": "json",
@@ -111,13 +110,6 @@
                             "dataType": "String",
                             "isNullable": false,
                             "direction": "out"   
-                        }
-                    },                    
-                    {
-                        "email": {
-                            "dataType": "Email",
-                            "isNullable": true,
-                            "direction": "out"
                         }
                     }
                 ],
