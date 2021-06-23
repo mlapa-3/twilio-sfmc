@@ -18,7 +18,7 @@
                 {
                     "accountSid": "",
                     "authToken": "",
-                    "from": "",
+                    "messagingService": "",
                     "to": "{{Contact.Attribute.SMSAPIML2.To}}",
                     "body": ""
                 }               
@@ -94,7 +94,14 @@
                             "isNullable": false,
                             "direction": "out"   
                         }
-                    },                    
+                    },
+                    {
+                        "messagingService": {
+                            "dataType": "String",
+                            "isNullable": false,
+                            "direction": "out"   
+                        }
+                    }, 
                     {
                         "from": {
                             "dataType": "Phone",
