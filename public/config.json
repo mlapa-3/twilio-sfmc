@@ -16,11 +16,15 @@
         "execute": {
             "inArguments": [
                 {
-                  "to": "{{Contact.Attribute.SMSAPIML.Phone}}"
+                    "accountSid": "",
+                    "authToken": "",
+                    "from": "",
+                    "to": "{{Contact.Attribute.SMSAPIML.Phone}}",
+                    "body": ""
                 }               
             ],
             "outArguments": [],
-            "url": "https://twilio-apitest.herokuapp.com/execute",
+            "url": "https://twilio-apitest.herokuapp.com/journeybuilder/execute",
             "verb": "POST",
             "body": "",
             "format": "json",
